@@ -15,7 +15,7 @@ export const GlobalCss = createGlobalStyle`
         overflow-x: hidden;
         }
     body {
-        background-color: #dcdde1;
+    background: linear-gradient(to right, #d2dae2, #808e9b, #1e272e);
     }
     .container {
         max-width: 1024px;

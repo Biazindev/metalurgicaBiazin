@@ -4,36 +4,57 @@ import { breakpoints, cores } from "../../styles/variaveis";
 
 export const ContainerHeader = styled.div`
     width: 100%;
-    height: 116px;
+    height: 180px;
     display: flex;
     justify-content: space-between;
     background: linear-gradient(135deg, #5352ed 0%, #1B1464 100%);
     
+       div {
         img {
             width: 200px;
             height: 100px;
             display: block;
         }
 
-    span {
+    p {
     color: #fff;
-    position: relative;
-    top: -10px;
-    left: 74px;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
     }
+       }
 
     @media(max-width: ${breakpoints.mobile}) {
         background-size: cover;
         width: 100%;
     }
 `
+export const Logo = styled.div`
+margin: 0 auto;
+align-items: start;
+
+    div {
+        img {
+            width: 200px;
+            height: 100px;
+            display: block;
+        }
+
+    p {
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    }
+       }
+`
 
 export const Display = styled.div<{ $isOpen: boolean }>`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    display: flex;
+    display: -webkit-box;    
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -52,6 +73,7 @@ export const Display = styled.div<{ $isOpen: boolean }>`
             margin-top: 110px;
             width: 200px;
             position: fixed;
+            right: 1px;
             border-radius: 8px;
             height: 174em;
             opacity: 85%;
@@ -80,13 +102,14 @@ export const LinkHeader = styled(Link)`
 `
 
 export const Hamburguer = styled.div`
-    width: 32px;
+    width: 100%;
     cursor: pointer;
     z-index: 2000;
     display: block;
     position: relative;
     top: 50px;
-    left: 120px;
+    left: 100px;
+
     span {
         height: 2px;
         display: block;
@@ -125,7 +148,7 @@ export const DisplayHeader = styled.div`
     position: absolute;
     justify-content: center;
     z-index: 1003;
-    top: 65px;
+    top: 145px;
     display: none;
     margin: 0 auto;
     align-items: center;

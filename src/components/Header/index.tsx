@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import logo from '../../assets/logo.png'
 
 
-import { ContainerHeader, Display, DisplayHeader, Hamburguer, LinkHeader, LinkItem, NavMobile } from './styles'
+import { ContainerHeader, Display, DisplayHeader, Hamburguer, LinkHeader, LinkItem, NavMobile, Logo } from './styles'
 
 const Header: React.FC = () => {
     const dispatch = useDispatch()
@@ -11,7 +11,10 @@ const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(true)
     return (
         <ContainerHeader>
-            <img src={logo} alt="Header Background" />
+            <Logo>
+                <img src={logo} alt="Header Background" />
+                <p>Metalúrgica Biazin</p>
+            </Logo>
             <DisplayHeader>
                     <nav>
                         <div>
@@ -20,6 +23,9 @@ const Header: React.FC = () => {
                         <ul>
                             <li>
                                 <LinkHeader onClick={() => setIsMenuOpen(true)} to={'/contact'}>Contato</LinkHeader>
+                            </li>
+                            <li>
+                                <LinkHeader onClick={() => setIsMenuOpen(true)} to={'/jobs'}>Trabalhe Conosco</LinkHeader>
                             </li>
                         </ul>
                     </nav>
@@ -38,6 +44,9 @@ const Header: React.FC = () => {
                             </LinkItem>
                             <LinkItem>
                                 <LinkHeader onClick={() => setIsMenuOpen(true)} to={'/contact'}>Contato</LinkHeader>
+                            </LinkItem>
+                            <LinkItem>
+                                <LinkHeader onClick={() => setIsMenuOpen(true)} to={'/jobs'}>Trabalhe Conosco</LinkHeader>
                             </LinkItem>
                         </ul>
                     </nav>
