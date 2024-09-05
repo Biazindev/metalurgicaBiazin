@@ -63,18 +63,25 @@ export const Carousel = styled.div`
     p {
         position: absolute;
         z-index: 4;
-        width: 600px;
+        width: 80%;
         font-size: 26px;
+        line-height: 48px;
         font-weight: bold;
         top: 190px;
         left: 150px;
-        color: #fff200;
+        color: #fff;
         text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 4px 4px 8px rgba(0, 0, 0, 2.1);
+
+        span {
+        color: #ff3838;
+        font-size: 32px;
+        opacity: 90%;
+        }
 
         @media(max-width: ${breakpoints.tablet}) {
         font-size: 16px;
         line-height: 28px;
-        width: 300px;
+        width: 90%;
         top: 70px;
         left: 20px;
         }

@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit"
 
 import modalReducer from "./modal"
-import githubApi from '../../services/githubApi'
-import vercelApi from '../../services/vercelApi'
+import vercelApi from "../../services/vercelApi"
+import githubApi from "../../services/githubApi"
 
 export const store = configureStore({
     reducer: {

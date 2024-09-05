@@ -13,7 +13,7 @@ import { ButtonLink } from "../Button/styles"
 import { Carousel, Container, ContentWrapper } from "./styles"
 
 const Hero = () => {
-  const phoneNumber = '5517981716648'
+  const phoneNumber = '5544999875065'
   const message = 'Olá, gostaria de saber mais sobre...'
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 
@@ -36,15 +36,15 @@ const Hero = () => {
         <ContentWrapper>
           <Slider {...settings}>
             <Carousel>
-              <p>Transforme seu projeto com nossas estruturas metálicas de alta qualidade! Oferecemos soluções personalizadas para coberturas de barracões que unem durabilidade e excelente custo-benefício. Solicite seu orçamento agora!</p>
+              <p>Transforme seu projeto com nossas estruturas metálicas de <span>ALTA QUALIDADE!</span> Oferecemos soluções personalizadas para coberturas de barracões que unem durabilidade e excelente custo-benefício. Solicite seu orçamento agora!</p>
               <img src={banner1} alt="Banner 1" />
             </Carousel>
             <Carousel>
-              <p>Estruturas metálicas sob medida para suas necessidades! Coberturas para barracões, galpões e muito mais com a qualidade que seu projeto merece. Fale com a gente e faça seu orçamento!</p>
+              <p>Estruturas metálicas <span>SOB MEDIDA</span> para suas necessidades! Coberturas para barracões, galpões e muito mais com a qualidade que seu projeto merece. Fale com a gente e faça seu orçamento!</p>
               <img src={banner2} alt="Banner 2" />
             </Carousel>
             <Carousel>
-              <p>Proteja sua construção das chuvas com nossas calhas de alta resistência! Temos as melhores soluções para garantir que sua estrutura esteja sempre segura e livre de infiltrações. Solicite seu orçamento!</p>
+              <p>Proteja sua construção das chuvas com nossas calhas de <span>ALTA RESISTÊNCIA!</span> Temos as melhores soluções para garantir que sua estrutura esteja sempre segura e livre de infiltrações. Solicite seu orçamento!</p>
               <img src={banner3} alt="Banner 2" />
             </Carousel>
           </Slider>

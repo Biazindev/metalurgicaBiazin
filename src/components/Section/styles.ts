@@ -9,6 +9,7 @@ export const Container = styled.div`
     width: 100%;
     height: auto;
     margin: 0 auto;
+    margin-left: 40px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -60,6 +61,7 @@ export const Container = styled.div`
     border-radius: 24px;
     object-fit: cover;
     margin: 24px;
+    margin: 0;
     padding: 0;
     width: 550px;
     height: 250px;
@@ -86,13 +88,16 @@ export const Card = styled.div`
 
 
 p{
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 32px;
     font-weight: 400;
     width: 100%;
+    margin-right: 24px;
     margin: 0 auto;
     display: flex;
     justify-content: center;   
     z-index: 1000;
+    color: #fff;
     margin-bottom: 8px;
 
     @media(max-width: ${breakpoints.tablet}) {
@@ -108,39 +113,37 @@ p{
     background-color: #00a8ff;
     border: none;
     height: 32px;
-    width: 300px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: ${cores.text1};
 
     @media(max-width: ${breakpoints.tablet}) {
-        display: none;
     }
     }
 
     h1 {
-    color: #00a8ff;
+    color: #ff3838;
+    font-size: 32px;
     z-index: 1000;
+    margin-right: 56px;
     margin: 0 auto;
     display: flex;
     width: 100%;
-    padding-bottom: 8px;
     justify-content: center;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 4px 4px 8px rgba(0, 0, 0, 2.1);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, .2);
     }
 `
 
 export const Adjust = styled.div`
     margin: 0 auto;
     display: flex;
-    jutify-content: center;
-    max-width: 1166px;
     width: 100%;
     padding: 48px;
+    background: linear-gradient(to right, #d2dae2, #808e9b, #1e272e);
 
-    @media(max-width: 1166px) {
-    display: block;
-}
-
+        @media (max-width: 980px) {
+        display: block;
+    }
 `

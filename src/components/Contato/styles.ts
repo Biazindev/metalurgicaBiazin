@@ -1,5 +1,5 @@
 import { styled } from "styled-components"
-import { breakpoints, cores } from "../../styles/variaveis"
+import {  cores } from "../../styles/variaveis"
 
 
 export const Container = styled.div`
@@ -50,6 +50,10 @@ export const Card = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
+
+    h3 {
+    font-size: 12px;
+    }
 
     span {
     

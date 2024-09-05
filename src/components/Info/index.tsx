@@ -25,7 +25,7 @@ const Info = () => {
     return (
         <Adjust>
             <Card>
-                <h1>Loja acessórios e utensílios de churrasco</h1>
+                <h1>Loja de acessórios e utensílios de churrasco</h1>
                 <p>Eleve seu churrasco a outro nível com nossas grelhas e espetos de primeira linha! Aqui você encontra o que há de melhor para aquele momento especial com amigos e família. Visite-nos e veja nossas promoções!</p>
                 <ButtonLink to={'/portifolio'}>Saiba mais</ButtonLink>
             </Card>

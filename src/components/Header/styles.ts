@@ -85,8 +85,8 @@ export const Hamburguer = styled.div`
     z-index: 2000;
     display: block;
     position: relative;
-    top: 55px;
-    margin-left: 24px;
+    top: 50px;
+    left: 120px;
     span {
         height: 2px;
         display: block;
