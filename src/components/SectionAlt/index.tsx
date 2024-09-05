@@ -28,7 +28,7 @@ const SectionAlt = () => {
                 <Card>
                     <h1>Toldos e fachadas</h1>
                     <p>Transforme seu ambiente com toldos personalizados! Oferecemos soluções que unem funcionalidade e estética, perfeitas para qualquer espaço. Proteja-se do sol e da chuva com estilo. Entre em contato e conheça nossas ofertas especiais!</p>
-                    <ButtonLink to={'/portifolio'}>Saiba mais</ButtonLink>
+                    <ButtonLink to={'/awnings'}>Saiba mais</ButtonLink>
                 </Card>
            <Container>
                 <Slider {...settings}>

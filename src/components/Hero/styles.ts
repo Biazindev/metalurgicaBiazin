@@ -67,7 +67,7 @@ export const Carousel = styled.div`
         font-size: 26px;
         line-height: 48px;
         font-weight: bold;
-        top: 190px;
+        top: 120px;
         left: 150px;
         color: #fff;
         text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 4px 4px 8px rgba(0, 0, 0, 2.1);
