@@ -9,9 +9,9 @@ export const Container = styled.div`
     width: 100%;
     height: auto;
     margin: 0 auto;
-    margin-left: 40px;
+    margin-right: 40px;
     align-items: center;
-    display: flex;
+    display: block;
     justify-content: center;
     gap: 20px;
 
@@ -25,8 +25,7 @@ export const Container = styled.div`
 
     @media(max-width: 988px) {
         height: auto;
-        display: grid;
-        width: 200px;
+        display: block;
         grid-template-columns: 1fr;
         margin: 0 auto;
         align-items: center;
@@ -34,11 +33,11 @@ export const Container = styled.div`
     }
 
     img {
-        width: 300px;
-        height: 500px;
+        width: 100%;
+        height: auto;
     
     @media(max-width: 506px) {
-    display: grid;
+    display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -46,40 +45,35 @@ export const Container = styled.div`
         
     }
 
-    img {
-    width: 200px;
-    height: 250px;
-    border-radius: 8px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 4px 4px 8px rgba(0, 0, 0, 2.1);
-    
-
-    }
 .slick-list {
     position: relative;
     display: block;
     overflow: hidden;
     border-radius: 24px;
     object-fit: cover;
-    margin-right: 40px;
+    margin: 24px;
+    margin: 0;
     padding: 0;
-    width: 550px;
-    height: 250px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 48px;
 
-    @media(max-width: 600px) {
-    width: 400px;
-}
-    @media(max-width: 410px) {
-    width: 280px;
-}
+    @media(max-width: 778px) {
+    width: 100%;
+    height: auto;
+    }
 `
 
 
 export const Carousel = styled.div`
     position: relative;
-    width: 300px;
+    width: 100%;
+    height: auto;
 
     img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
     }
 `
 
@@ -88,7 +82,7 @@ export const Card = styled.div`
 
 p{
     font-size: 16px;
-    line-height: 48px;
+    line-height: 32px;
     font-weight: 400;
     width: 100%;
     margin-right: 24px;
@@ -96,13 +90,12 @@ p{
     display: flex;
     justify-content: center;   
     z-index: 1000;
-    color: #fff;
+    color: #f7f1e3;
     margin-bottom: 8px;
 
     @media(max-width: ${breakpoints.tablet}) {
         width: 100%;
         font-size: 16px;
-        line-height: 32px;
     }
     }
 
@@ -118,13 +111,10 @@ p{
     justify-content: center;
     align-items: center;
     color: ${cores.text1};
-
-    @media(max-width: ${breakpoints.tablet}) {
-    }
     }
 
     h1 {
-    color: #ff3838;
+    color: #00a8ff;
     font-size: 32px;
     z-index: 1000;
     margin-right: 56px;
@@ -138,12 +128,38 @@ p{
 
 export const Adjust = styled.div`
     margin: 0 auto;
+    display: block;
+    width: 800px;
+    height: auto;
+    padding: 48px;
+
+    @media(max-width: 778px) {
+    width: 100%;
+    }
+
+    h1 {
+    color: #ff3838;
+    font-size: 64px;
+    z-index: 1000;
+    margin: 32px auto;
     display: flex;
     width: 100%;
-    padding: 48px;
-    background: linear-gradient(to right, #d2dae2, #808e9b, #1e272e);
+    justify-content: center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, .2);
 
-        @media (max-width: 980px) {
-        display: block;
+    @media(max-width: 778px) {
+    font-size: 40px;
+    }
+    }
+
+    h2 {
+    color: #00a8ff;
+    font-size: 32px;
+    z-index: 1000;
+    margin: 32px auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, .2);
     }
 `

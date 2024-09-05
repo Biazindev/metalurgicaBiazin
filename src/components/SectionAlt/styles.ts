@@ -89,7 +89,7 @@ export const Card = styled.div`
 
 p{
     font-size: 16px;
-    line-height: 32px;
+    line-height: 48px;
     font-weight: 400;
     width: 100%;
     margin-right: 24px;
@@ -103,6 +103,7 @@ p{
     @media(max-width: ${breakpoints.tablet}) {
         width: 100%;
         font-size: 16px;
+        line-height: 32px;
     }
     }
 
