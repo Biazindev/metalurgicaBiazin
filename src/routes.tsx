@@ -4,6 +4,7 @@ import Contato from "./components/Contato"
 import Home from "./components/pages/Home"
 import Jobs from "./components/Jobs"
 import Store from "./components/SectionStore"
+import MetalStructure from "./components/MetalStructure"
 
 
 const Rotas = () =>  (
@@ -13,7 +14,7 @@ const Rotas = () =>  (
         <Route path='/contact' element={<Contato />} />
         <Route path='/jobs' element={<Jobs />} />
         <Route path='/store' element={<Store />} />
-
+        <Route path='/metalstructure' element={<MetalStructure />} />
     </Routes>
     )
 

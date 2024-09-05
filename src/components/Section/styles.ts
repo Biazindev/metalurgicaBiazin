@@ -60,7 +60,7 @@ export const Container = styled.div`
     overflow: hidden;
     border-radius: 24px;
     object-fit: cover;
-    margin-right: 40px;
+    margin: 0 auto;
     padding: 0;
     width: 550px;
     height: 250px;
@@ -92,7 +92,7 @@ p{
     font-weight: 400;
     width: 100%;
     margin-right: 24px;
-    margin: 0 auto;
+    margin: 0 32px;
     display: flex;
     justify-content: center;   
     z-index: 1000;
@@ -108,7 +108,7 @@ p{
 
      ${ButtonLink} {
     display: flex;
-    margin: 16px auto;
+    margin: 0px 32px;
     text-decoration: none;
     background-color: #00a8ff;
     border: none;
@@ -127,8 +127,7 @@ p{
     color: #ff3838;
     font-size: 32px;
     z-index: 1000;
-    margin-right: 56px;
-    margin: 0 auto;
+    margin: 32px auto;
     display: flex;
     width: 100%;
     justify-content: center;

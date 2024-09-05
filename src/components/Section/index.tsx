@@ -55,7 +55,7 @@ const SectionAlt = () => {
             <Card>
                 <h1>Estruturas Metalicas</h1>
                 <p>Sua obra merece o melhor! Estruturas metálicas com qualidade superior, durabilidade e montagem rápida. Economize tempo e garanta a segurança do seu projeto. Entre em contato e conheça nossas condições especiais!</p>
-                <ButtonLink to={'/portifolio'}>Saiba mais</ButtonLink>
+                <ButtonLink to={'/metalstructure'}>Saiba mais</ButtonLink>
             </Card>
         </Adjust>
     )
