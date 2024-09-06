@@ -6,6 +6,7 @@ import Jobs from "./components/Jobs"
 import Store from "./components/SectionStore"
 import MetalStructure from "./components/MetalStructure"
 import Awnings from "./components/Awnings"
+import Effect from "./components/Effect"
 
 
 const Rotas = () =>  (
@@ -17,6 +18,7 @@ const Rotas = () =>  (
         <Route path='/store' element={<Store />} />
         <Route path='/metalstructure' element={<MetalStructure />} />
         <Route path='/awnings' element={<Awnings />} />
+        <Route path={'/effect'} element={<Effect />} />
     </Routes>
     )
 
