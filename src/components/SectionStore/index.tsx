@@ -10,8 +10,12 @@ import banner4 from '../../assets/churrasqueira4.jpeg'
 import banner5 from '../../assets/churrasqueira5.jpeg'
 import banner6 from '../../assets/churrasqueira6.jpeg'
 import banner7 from '../../assets/churrasqueira7.jpeg'
+import { useEffect } from 'react'
 
 const Store = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     const phoneNumber = '5544999875065'
     const message = 'Olá, gostaria de saber mais sobre o item...'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`

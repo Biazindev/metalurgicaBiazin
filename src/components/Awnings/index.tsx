@@ -9,11 +9,15 @@ import banner3 from '../../assets/forro (3).jpeg'
 import banner4 from '../../assets/forro (4).jpeg'
 import banner5 from '../../assets/forro (5).jpeg'
 import banner6 from '../../assets/toldo.jpeg'
+import { useEffect } from 'react'
 
 
 
 
 const Awnings = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     const phoneNumber = '5544999875065'
     const message = 'Olá, gostaria de saber mais sobre o item...'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`

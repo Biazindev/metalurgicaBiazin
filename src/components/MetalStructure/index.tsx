@@ -13,11 +13,15 @@ import banner7 from '../../assets/cobertura (7).jpeg'
 import banner8 from '../../assets/estrutura.jpeg'
 import banner9 from '../../assets/estrutura2.jpeg'
 import banner10 from '../../assets/estrutura3.jpeg'
+import { useEffect } from 'react'
 
 
 
 
 const MetalStructure = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     const phoneNumber = '5544999875065'
     const message = 'Olá, gostaria de saber mais sobre o item...'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
